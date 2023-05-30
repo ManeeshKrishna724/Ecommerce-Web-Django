@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header_section" style="width: 100%; padding: 10px;background-color: black;">
+        <div>
+            <a href="{{request.META.HTTP_REFERER}}"><img onclick="request" src="{% static 'images/back.png' %}"></a>
+            <a href="{% url 'home' %}"><img style="position: absolute;right:0; padding-right: 15px;" src="{% static 'images/home.png' %}"></a>
+        </div>
+    </div>
+</body>
+</html>

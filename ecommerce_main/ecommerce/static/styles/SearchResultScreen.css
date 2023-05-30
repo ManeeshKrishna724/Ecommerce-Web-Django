@@ -1,0 +1,70 @@
+.container {
+    margin: 20px;
+}
+
+
+.fashion_taital {
+    width: 100%;
+    font-size: 40px;
+    color: #30302e;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.box_main {
+    max-width: 300px;
+    background-color: #ffffff;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.shirt_text {
+    width: 100%;
+    font-size: 20px;
+    color: #30302e;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.price_text {
+    width: 100%;
+    font-size: 16px;
+    color: #f26522;
+    margin: 0px;
+}
+
+.tshirt_img {
+    min-width: 100px;
+    text-align: center;
+    min-height: 150px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.item_btn {
+    background-color: black;
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 5px 13px 5px 13px;
+    border: solid 0px transparent;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.item_btn:hover {
+    opacity: .8;
+}

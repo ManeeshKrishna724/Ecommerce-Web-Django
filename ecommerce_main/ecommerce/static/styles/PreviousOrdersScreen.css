@@ -1,0 +1,36 @@
+.container {
+    margin: 20px;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.order-container {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.details-container {
+    margin-left: 15px;
+
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 500;
+}

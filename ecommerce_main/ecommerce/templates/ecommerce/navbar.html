@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="header_section" style="padding: 8px;background-color: black;">
+        <div class="container">
+           <div class="containt_main">
+              <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 
+                 <a href="{% url 'profile_screen' %}">Profile</a>
+                 <a href="{% url 'my_cart_screen' %}">My Cart</a>
+                 <a href="{% url 'previous_orders_screen' %}">Previous Orders</a>
+              </div>
+              <span style="padding-top: 5px;" class="toggle_icon" onclick="openNav()">
+                 <img src="{% static 'images/menu.png' %}">
+              </span>
+              
+              <div class="main">
+                 <!-- Another variation with a button -->
+                 <form onsubmit="handleSearch()" method="POST" class="input-group">
+                  {% csrf_token %}  
+                  <input required name="search-input" type="text" class="form-control" placeholder="Search here">
+                    <div class="input-group-append">
+                       <button type="submit" style="background-color: #f26522; border-color:#f26522;padding: 7px 12px 7px 12px;">
+                       <i class="fa fa-search"></i>
+                       </button>
+                    </div>
+                  </form>
+              </div>
+              <div class="header_box">
+                 <div class="login_menu">
+                    <ul>
+                       <li><a href="{% url 'my_cart_screen' %}">
+                          <i style="color:rgb(255, 255, 255)" class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          <span style="color:rgb(255, 255, 255)" class="padding_10">Cart</span></a>
+                       </li>
+                       <li><a href="{% url 'profile_screen' %}">
+                          <i style="color:rgb(255, 255, 255)" class="fa fa-user" aria-hidden="true"></i>
+                          <span style="color:rgb(255, 255, 255)" class="padding_10">Profile</span></a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
+</html>
